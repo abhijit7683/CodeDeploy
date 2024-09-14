@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy | Online Food Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #fc8019;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .search-bar {
+            width: 50%;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            border: none;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffa500;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .restaurant-list {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .restaurant {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+        .restaurant img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .restaurant h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .restaurant p {
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Swiggy</h1>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for restaurants or dishes">
+        <input type="submit" value="Search">
+    </div>
+</header>
+
+<section class="restaurant-list">
+    <div class="restaurant">
+        <img src="https://via.placeholder.com/200" alt="Restaurant 1">
+        <h3>Restaurant 1</h3>
+        <p>Fast Food • Pizza • ₹₹</p>
+    </div>
+
+    <div class="restaurant">
+        <img src="https://via.placeholder.com/200" alt="Restaurant 2">
+        <h3>Restaurant 2</h3>
+        <p>Chinese • Thai • ₹₹</p>
+    </div>
+
+    <div class="restaurant">
+        <img src="https://via.placeholder.com/200" alt="Restaurant 3">
+        <h3>Restaurant 3</h3>
+        <p>Indian • North Indian • ₹₹</p>
+    </div>
+
+    <div class="restaurant">
+        <img src="https://via.placeholder.com/200" alt="Restaurant 4">
+        <h3>Restaurant 4</h3>
+        <p>Italian • Continental • ₹₹</p>
+    </div>
+</section>
+
+</body>
+</html>
